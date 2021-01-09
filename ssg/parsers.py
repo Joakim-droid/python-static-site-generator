@@ -33,7 +33,4 @@ class ResourceParser(Parser):
         pass
 
     def parse(self, path, source, dest):
-        raise NotImplementedError()
-
-
-
+        raise NotImplementedError
