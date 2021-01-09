@@ -24,7 +24,7 @@ class Content(Mapping):
 
     @property
     def type(self):
-        return self.data["type"] if self.data["type"] else None
+        return self.data["type"] if self.data[type] else None
 
     @type.setter
     def type(self, type):
@@ -41,10 +41,10 @@ class Content(Mapping):
 
     def __repr__(self):
         data = {}
-        str(data)
         for key, value in self.data.items():
             if key != "content":
                 data[key] = value
+        return str(data)
 
 
 
